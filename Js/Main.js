@@ -1,11 +1,33 @@
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+function renderView(breadcrum, icon) {
+    $("#" + id).css('background-color', '#696969');
+    $('.breadcrum').text(breadcrum).attr('class',icon);
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+function renderView(breadcrum, icon, id) {
+    $("#" + id).css('background-color', '#696969');
+    $('.breadcrum').text(breadcrum).attr('class',icon);
+    setNavDefault();
+    $('#' + id).css({
+        color: 'steelblue',
+        backgroundcolor: '#696969'
+    });
+}
+
+function setNavDefault() {
+    $('#add').css({
+        backgroundcolor: '#373737',
+        color: '#d0d0d0'
+    });
+    $('#view').css({
+        backgroundcolor: '#373737',
+        color: '#d0d0d0'
+    });
+    $('#find').css({
+        backgroundcolor: '#373737',
+        color: '#d0d0d0'
+    });
+}
+
+function willDelete(){
+     return window.confirm("voulez vous vraiment supprimer");
 }

@@ -1,0 +1,24 @@
+*{
+    font-family: sans-serif; /* Change your font family */
+}
+.NavTop{
+    margin-left: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    color: steelblue;
+}
+
+#main {
+    height: 100%;
+    width: 98.5%;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+input.middle:focus {
+    outline-width: 0;
+}

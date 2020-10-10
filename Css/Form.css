@@ -1,0 +1,41 @@
+#form {
+    width: 55%;
+}
+
+#form > h1 {
+    text-align: center;
+}
+
+#form > form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: 3px solid #373737;
+    background-color: #373737;
+    border-radius: 20px;
+}
+
+#form > form > div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#form > form > div > label,input,select{
+    font-size: 48px;
+    height: 60px;
+}
+
+/*pour la section recherche*/
+input:focus {
+    outline: none;
+}
+
+#searchBox{
+    width: 40%;
+    height: 24px;
+    border-radius: 10px;
+    border: 3px solid #373737;
+    font-size: 18px
+}
