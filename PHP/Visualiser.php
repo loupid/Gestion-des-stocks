@@ -50,7 +50,10 @@ if (!empty($_POST['query']) && isset($_POST['query']) && $_POST['query'] === 'Mo
                 echo "Échec de connexion à la base de données: " . $e->getMessage();
             }
         }
-    } else redirect('?page=Modifier&id=' . $_POST['id']);
+    } else {
+        $_id = $_POST['id'];
+        redirect('?page=Modifier&id=' . $_id);
+    }
 }
 
 if (!empty($_POST['query']) && isset($_POST['query']) && $_POST['query'] === 'Supprimer') {

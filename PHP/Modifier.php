@@ -18,13 +18,13 @@ $data = $prep->fetch();
     <form action="?page=Visualiser" method="post">
         <div>
             <label for="name">Nom du stock</label>
-            <input id="name" name="name" type="text" maxlength="50" value="<?= $data['Nom'] ?>">
+            <input id="name" name="name" type="text" maxlength="50" value="<?= $data['Nom'] ?>" required>
         </div>
 
         <div>
             <label for="price">Prix du stock</label>
             <!-- that validate if the number correspond the number allowed in DB-->
-            <input id="price" name="price" type="number" value="<?= $data['Prix'] ?>" min="0.01" pattern="^[0-9]+([\.,][0-9]{1,2})?$" step="0.01">
+            <input id="price" name="price" type="number" value="<?= $data['Prix'] ?>" min="0.01" pattern="^[0-9]+([\.,][0-9]{1,2})?$" step="0.01" required>
         </div>
 
         <div>
